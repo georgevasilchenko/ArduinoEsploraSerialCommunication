@@ -1,0 +1,11 @@
+Debug/
+.vs/
+__vm/
+
+*.sln
+*.xml
+*.vcxproj
+*.filters
+*.user
+*.elf
+*.hex
