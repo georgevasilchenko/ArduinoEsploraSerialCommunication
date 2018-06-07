@@ -73,3 +73,57 @@ inline int read_accelerometer(const byte axis)
 {
 	return Esplora.readAccelerometer(axis);
 }
+
+/**
+* \brief reads value of Esplora button
+* \return value of Esplora button
+*/
+inline int read_button(const byte channel)
+{
+	return Esplora.readButton(channel);
+}
+
+/**
+* \brief reads value of Esplora joystick X axis
+* \return value of Esplora joystick X axis
+*/
+inline int read_joystick_x()
+{
+	return Esplora.readJoystickX();
+}
+
+/**
+* \brief reads value of Esplora joystick Y axis
+* \return value of Esplora joystick Y axis
+*/
+inline int read_joystick_y()
+{
+	return Esplora.readJoystickY();
+}
+
+/**
+* \brief reads brightness value of Esplora red LED
+* \return brightness value of Esplora red LED
+*/
+inline int read_red()
+{
+	return Esplora.readRed();
+}
+
+/**
+* \brief reads brightness value of Esplora green LED
+* \return brightness value of Esplora green LED
+*/
+inline int read_green()
+{
+	return Esplora.readGreen();
+}
+
+/**
+* \brief reads brightness value of Esplora blue LED
+* \return brightness value of Esplora blue LED
+*/
+inline int read_blue()
+{
+	return Esplora.readBlue();
+}

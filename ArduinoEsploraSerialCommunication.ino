@@ -56,6 +56,42 @@ void loop() {
 	message += convert_int_to_string(read_accelerometer(2U));
 	message += separator;
 
+	// button down [order - 9]
+	message += convert_int_to_string(read_button(1U));
+	message += separator;
+
+	// button left [order - 10]
+	message += convert_int_to_string(read_button(2U));
+	message += separator;
+
+	// button up [order - 11]
+	message += convert_int_to_string(read_button(3U));
+	message += separator;
+
+	// button right [order - 12]
+	message += convert_int_to_string(read_button(4U));
+	message += separator;
+
+	// joystick X [order - 13]
+	message += convert_int_to_string(read_joystick_x());
+	message += separator;
+
+	// joystick Y [order - 14]
+	message += convert_int_to_string(read_joystick_y());
+	message += separator;
+
+	// LED red [order - 15]
+	message += convert_int_to_string(read_red());
+	message += separator;
+
+	// LED green [order - 16]
+	message += convert_int_to_string(read_green());
+	message += separator;
+
+	// LED blue [order - 17]
+	message += convert_int_to_string(read_blue());
+	message += separator;
+
 	Serial.println(message.c_str());
 
 	// delay
